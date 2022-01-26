@@ -23,18 +23,11 @@ This Repository is an up-to-date version of Harvard nlp's Legacy code and a Refa
 
 
 # file structure
-
-├── config.py
-├── data.py
-├── graph.py
+```
 ├── models
-
 │   ├── __init__.py
-
 │   ├── blocks
-
 │   │   ├── __init__.py
-
 │   │   ├── decoder_layer.py
 │   │   ├── encoder_layer.py
 │   ├── embedding
@@ -48,39 +41,38 @@ This Repository is an up-to-date version of Harvard nlp's Legacy code and a Refa
 │   │   ├── position_wise_feed_forward.py
 │   │   └── sublayer_connection.py
 │   ├── model
-
 │   │   ├── __init__.py
-
 │   │   ├── decoder.py
 │   │   ├── encoder_decoder.py
 │   │   ├── encoder.py
 │   │   ├── generator.py
 │   └── util.py
-├── README.md
 ├── result
 │   ├── loss_graph.png
 │   ├── train_loss.txt
 │   └── valid_loss.txt
 ├── saved
+├── utils
+    ├── __init__.py
+    ├── batch.py
+    ├── batch_size_fn.py
+    ├── bleu.py
+    ├── data_loader.py
+    ├── epoch_time.py
+    ├── greedy_decode.py
+    ├── label_smoothing.py
+    ├── make_model.py
+    ├── NoamOpt.py
+    ├── run_epoch.py
+    ├── simple_loss_compute.py
+    └── tokenizer.py
+├── README.md
 ├── test.py
 ├── train.py
-└── utils
-
-​    ├── __init__.py
-
-​    ├── batch.py
-​    ├── batch_size_fn.py
-​    ├── bleu.py
-​    ├── data_loader.py
-​    ├── epoch_time.py
-​    ├── greedy_decode.py
-​    ├── label_smoothing.py
-​    ├── make_model.py
-​    ├── NoamOpt.py
-​    ├── run_epoch.py
-​    ├── simple_loss_compute.py
-​    └── tokenizer.py
-
+├── config.py
+├── data.py
+└── graph.py
+```
 
 
 # Training Result
